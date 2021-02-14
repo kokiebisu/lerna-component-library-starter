@@ -35,5 +35,6 @@
     "postcss-loader": "4.2.0",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.17"
-  }
+  },
+  "gitHead": "d0046fa433721dd3feb1be20257072721e8b16e0"
 }
