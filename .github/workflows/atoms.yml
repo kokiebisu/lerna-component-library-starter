@@ -1,0 +1,15 @@
+name: atoms-bundling
+
+on: push
+
+jobs:
+  storybook-deploy:
+    name: Deploy storybook
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Push code
+        run: yarn deploy:storybook

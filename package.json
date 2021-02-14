@@ -31,6 +31,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "lerna run build",
-    "deploy": "yarn build-storybook && gh-pages -d storybook-static"
+    "deploy:storybook": "yarn build-storybook && gh-pages -d storybook-static",
+    "deploy:packages": "lerna run build && lerna publish"
   }
 }
