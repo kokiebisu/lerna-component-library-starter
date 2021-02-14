@@ -1,11 +1,10 @@
 {
-  "name": "root",
+  "name": "lerna-component-library-starter",
   "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/kokiebisu/lerna-component-library-starter.git",
   "author": "Kenichi Okiebisu <a01056715@gmail.com>",
   "license": "MIT",
-  "private": true,
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@storybook/addon-actions": "^6.1.17",
@@ -29,6 +28,8 @@
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "lerna run build",
+    "deploy": "yarn build-storybook && gh-pages -d storybook-static"
   }
 }
