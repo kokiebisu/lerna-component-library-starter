@@ -10,7 +10,10 @@ module.exports = {
     library: "@lerna-component-library-starter/atoms",
   },
   module: {
-    rules: [{ test: /\.tsx/, use: ["ts-loader"] }],
+    rules: [
+      { test: /\.tsx/, use: ["ts-loader"] },
+      { test: /\.css$/, use: ["style-loader", "css-loader", "postcss-loader"] },
+    ],
   },
   externals: [{ react: "react" }],
   resolve: {
