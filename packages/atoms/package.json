@@ -17,7 +17,8 @@
     "url": "git+https://github.com/kokiebisu/lerna-component-library-starter.git"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack"
+    "clean": "rm -rf dist",
+    "build": "yarn clean && NODE_ENV=production webpack"
   },
   "bugs": {
     "url": "https://github.com/kokiebisu/lerna-component-library-starter/issues"
