@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/kokiebisu/lerna-component-library-starter.git",
   "author": "Kenichi Okiebisu <a01056715@gmail.com>",
