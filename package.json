@@ -25,6 +25,7 @@
     "style-loader": "^2.0.0"
   },
   "scripts": {
+    "publish": "lerna publish",
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
     "storybook": "start-storybook -p 6006",
