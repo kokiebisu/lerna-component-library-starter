@@ -11,8 +11,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install lerna
+        run: npm install -g lerna
+
       - name: Bootstrapping
-        run: yarn bootstrap
+        run: lerna bootstrap
 
       - name: Push code
-        run: yarn deploy:storybook
+        run: npm run deploy:storybook
